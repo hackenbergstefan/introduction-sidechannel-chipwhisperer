@@ -1,0 +1,1518 @@
+
+example_1-CWLITEXMEGA.elf:     Dateiformat elf32-avr
+
+Sektionen:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000007d4  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         0000000e  00802000  000007d4  00000868  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000052  0080200e  0080200e  00000876  2**0
+                  ALLOC
+  3 .comment      00000011  00000000  00000000  00000876  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000888  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 000000a8  00000000  00000000  000008c8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   0000363e  00000000  00000000  00000970  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 0000268f  00000000  00000000  00003fae  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00000a41  00000000  00000000  0000663d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  0000032c  00000000  00000000  00007080  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00001fd3  00000000  00000000  000073ac  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    00000c83  00000000  00000000  0000937f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000018  00000000  00000000  0000a002  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 ea 00 	jmp	0x1d4	; 0x1d4 <__ctors_end>
+   4:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+   8:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+   c:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  10:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  14:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  18:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  1c:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  20:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  24:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  28:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  2c:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  30:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  34:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  38:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  3c:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  40:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  44:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  48:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  4c:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  50:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  54:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  58:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  5c:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  60:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  64:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  68:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  6c:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  70:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  74:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  78:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  7c:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  80:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  84:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  88:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  8c:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  90:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  94:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  98:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  9c:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  a0:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  a4:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  a8:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  ac:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  b0:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  b4:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  b8:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  bc:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  c0:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  c4:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  c8:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  cc:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  d0:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  d4:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  d8:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  dc:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  e0:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  e4:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  e8:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  ec:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  f0:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  f4:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  f8:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+  fc:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 100:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 104:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 108:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 10c:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 110:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 114:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 118:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 11c:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 120:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 124:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 128:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 12c:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 130:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 134:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 138:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 13c:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 140:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 144:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 148:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 14c:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 150:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 154:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 158:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 15c:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 160:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 164:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 168:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 16c:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 170:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 174:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 178:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 17c:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 180:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 184:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 188:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 18c:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 190:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 194:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 198:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 19c:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 1a0:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 1a4:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 1a8:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 1ac:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 1b0:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 1b4:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 1b8:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 1bc:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 1c0:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+ 1c4:	0c 94 0b 01 	jmp	0x216	; 0x216 <__bad_interrupt>
+
+000001c8 <__trampolines_start>:
+ 1c8:	0c 94 03 02 	jmp	0x406	; 0x406 <ss_get_commands>
+ 1cc:	0c 94 0d 01 	jmp	0x21a	; 0x21a <hello>
+ 1d0:	0c 94 f0 01 	jmp	0x3e0	; 0x3e0 <check_version>
+
+000001d4 <__ctors_end>:
+ 1d4:	11 24       	eor	r1, r1
+ 1d6:	1f be       	out	0x3f, r1	; 63
+ 1d8:	cf ef       	ldi	r28, 0xFF	; 255
+ 1da:	cd bf       	out	0x3d, r28	; 61
+ 1dc:	df e3       	ldi	r29, 0x3F	; 63
+ 1de:	de bf       	out	0x3e, r29	; 62
+ 1e0:	00 e0       	ldi	r16, 0x00	; 0
+ 1e2:	0c bf       	out	0x3c, r16	; 60
+
+000001e4 <__do_copy_data>:
+ 1e4:	10 e2       	ldi	r17, 0x20	; 32
+ 1e6:	a0 e0       	ldi	r26, 0x00	; 0
+ 1e8:	b0 e2       	ldi	r27, 0x20	; 32
+ 1ea:	e4 ed       	ldi	r30, 0xD4	; 212
+ 1ec:	f7 e0       	ldi	r31, 0x07	; 7
+ 1ee:	00 e0       	ldi	r16, 0x00	; 0
+ 1f0:	0b bf       	out	0x3b, r16	; 59
+ 1f2:	02 c0       	rjmp	.+4      	; 0x1f8 <__do_copy_data+0x14>
+ 1f4:	07 90       	elpm	r0, Z+
+ 1f6:	0d 92       	st	X+, r0
+ 1f8:	ae 30       	cpi	r26, 0x0E	; 14
+ 1fa:	b1 07       	cpc	r27, r17
+ 1fc:	d9 f7       	brne	.-10     	; 0x1f4 <__do_copy_data+0x10>
+
+000001fe <__do_clear_bss>:
+ 1fe:	20 e2       	ldi	r18, 0x20	; 32
+ 200:	ae e0       	ldi	r26, 0x0E	; 14
+ 202:	b0 e2       	ldi	r27, 0x20	; 32
+ 204:	01 c0       	rjmp	.+2      	; 0x208 <.do_clear_bss_start>
+
+00000206 <.do_clear_bss_loop>:
+ 206:	1d 92       	st	X+, r1
+
+00000208 <.do_clear_bss_start>:
+ 208:	a0 36       	cpi	r26, 0x60	; 96
+ 20a:	b2 07       	cpc	r27, r18
+ 20c:	e1 f7       	brne	.-8      	; 0x206 <.do_clear_bss_loop>
+ 20e:	0e 94 d5 03 	call	0x7aa	; 0x7aa <main>
+ 212:	0c 94 e8 03 	jmp	0x7d0	; 0x7d0 <_exit>
+
+00000216 <__bad_interrupt>:
+ 216:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000021a <hello>:
+#include "simpleserial.h"
+#include <stdint.h>
+#include <string.h>
+
+uint8_t hello(uint8_t cmd, uint8_t scmd, uint8_t len, uint8_t *buf)
+{
+ 21a:	1f 93       	push	r17
+ 21c:	cf 93       	push	r28
+ 21e:	df 93       	push	r29
+    trigger_high();
+ 220:	c0 e0       	ldi	r28, 0x00	; 0
+ 222:	d6 e0       	ldi	r29, 0x06	; 6
+ 224:	11 e0       	ldi	r17, 0x01	; 1
+ 226:	1d 83       	std	Y+5, r17	; 0x05
+
+    simpleserial_put(0x01, 12, "hello world.");
+ 228:	40 e0       	ldi	r20, 0x00	; 0
+ 22a:	50 e2       	ldi	r21, 0x20	; 32
+ 22c:	6c e0       	ldi	r22, 0x0C	; 12
+ 22e:	81 e0       	ldi	r24, 0x01	; 1
+ 230:	0e 94 9b 01 	call	0x336	; 0x336 <simpleserial_put>
+
+    trigger_low();
+ 234:	1e 83       	std	Y+6, r17	; 0x06
+    return 0;
+}
+ 236:	80 e0       	ldi	r24, 0x00	; 0
+ 238:	df 91       	pop	r29
+ 23a:	cf 91       	pop	r28
+ 23c:	1f 91       	pop	r17
+ 23e:	08 95       	ret
+
+00000240 <ss_crc>:
+
+
+// 0xA6 formerly 
+#define CW_CRC 0x4D 
+uint8_t ss_crc(uint8_t *buf, uint8_t len)
+{
+ 240:	fc 01       	movw	r30, r24
+	unsigned int k = 0;
+	uint8_t crc = 0x00;
+ 242:	80 e0       	ldi	r24, 0x00	; 0
+	while (len--) {
+		crc ^= *buf++;
+		for (k = 0; k < 8; k++) {
+			crc = crc & 0x80 ? (crc << 1) ^ CW_CRC: crc << 1;
+ 244:	9d e4       	ldi	r25, 0x4D	; 77
+#define CW_CRC 0x4D 
+uint8_t ss_crc(uint8_t *buf, uint8_t len)
+{
+	unsigned int k = 0;
+	uint8_t crc = 0x00;
+	while (len--) {
+ 246:	61 50       	subi	r22, 0x01	; 1
+ 248:	70 f0       	brcs	.+28     	; 0x266 <ss_crc+0x26>
+		crc ^= *buf++;
+ 24a:	21 91       	ld	r18, Z+
+ 24c:	82 27       	eor	r24, r18
+ 24e:	28 e0       	ldi	r18, 0x08	; 8
+ 250:	30 e0       	ldi	r19, 0x00	; 0
+		for (k = 0; k < 8; k++) {
+			crc = crc & 0x80 ? (crc << 1) ^ CW_CRC: crc << 1;
+ 252:	87 ff       	sbrs	r24, 7
+ 254:	03 c0       	rjmp	.+6      	; 0x25c <ss_crc+0x1c>
+ 256:	88 0f       	add	r24, r24
+ 258:	89 27       	eor	r24, r25
+ 25a:	01 c0       	rjmp	.+2      	; 0x25e <ss_crc+0x1e>
+ 25c:	88 0f       	add	r24, r24
+ 25e:	21 50       	subi	r18, 0x01	; 1
+ 260:	31 09       	sbc	r19, r1
+{
+	unsigned int k = 0;
+	uint8_t crc = 0x00;
+	while (len--) {
+		crc ^= *buf++;
+		for (k = 0; k < 8; k++) {
+ 262:	b9 f7       	brne	.-18     	; 0x252 <ss_crc+0x12>
+ 264:	f0 cf       	rjmp	.-32     	; 0x246 <ss_crc+0x6>
+			crc = crc & 0x80 ? (crc << 1) ^ CW_CRC: crc << 1;
+		}
+	}
+	return crc;
+
+}
+ 266:	08 95       	ret
+
+00000268 <ss_puts>:
+	uint8_t (*fp)(uint8_t, uint8_t, uint8_t, uint8_t *);
+} ss_cmd;
+static ss_cmd commands[MAX_SS_CMDS];
+
+void ss_puts(char *x)
+{
+ 268:	cf 93       	push	r28
+ 26a:	df 93       	push	r29
+ 26c:	ec 01       	movw	r28, r24
+	do {
+		putch(*x);
+ 26e:	89 91       	ld	r24, Y+
+ 270:	0e 94 2b 03 	call	0x656	; 0x656 <output_ch_0>
+	} while (*++x);
+ 274:	88 81       	ld	r24, Y
+ 276:	81 11       	cpse	r24, r1
+ 278:	fa cf       	rjmp	.-12     	; 0x26e <ss_puts+0x6>
+}
+ 27a:	df 91       	pop	r29
+ 27c:	cf 91       	pop	r28
+ 27e:	08 95       	ret
+
+00000280 <stuff_data>:
+    return 0x00;
+
+}
+
+uint8_t stuff_data(uint8_t *buf, uint8_t len)
+{
+ 280:	ac 01       	movw	r20, r24
+ 282:	fc 01       	movw	r30, r24
+ 284:	31 96       	adiw	r30, 0x01	; 1
+	uint8_t i = 1;
+	uint8_t last = 0;
+ 286:	20 e0       	ldi	r18, 0x00	; 0
+
+}
+
+uint8_t stuff_data(uint8_t *buf, uint8_t len)
+{
+	uint8_t i = 1;
+ 288:	91 e0       	ldi	r25, 0x01	; 1
+	uint8_t last = 0;
+	for (; i < len; i++) {
+ 28a:	96 17       	cp	r25, r22
+ 28c:	60 f4       	brcc	.+24     	; 0x2a6 <stuff_data+0x26>
+		if (buf[i] == FRAME_BYTE) {
+ 28e:	81 91       	ld	r24, Z+
+ 290:	81 11       	cpse	r24, r1
+ 292:	07 c0       	rjmp	.+14     	; 0x2a2 <stuff_data+0x22>
+			buf[last] = i - last;
+ 294:	da 01       	movw	r26, r20
+ 296:	a2 0f       	add	r26, r18
+ 298:	b1 1d       	adc	r27, r1
+ 29a:	89 2f       	mov	r24, r25
+ 29c:	82 1b       	sub	r24, r18
+ 29e:	8c 93       	st	X, r24
+ 2a0:	29 2f       	mov	r18, r25
+
+uint8_t stuff_data(uint8_t *buf, uint8_t len)
+{
+	uint8_t i = 1;
+	uint8_t last = 0;
+	for (; i < len; i++) {
+ 2a2:	9f 5f       	subi	r25, 0xFF	; 255
+ 2a4:	f2 cf       	rjmp	.-28     	; 0x28a <stuff_data+0xa>
+			buf[last] = i - last;
+			last = i;
+		}
+	}
+	return 0x00;
+}
+ 2a6:	80 e0       	ldi	r24, 0x00	; 0
+ 2a8:	08 95       	ret
+
+000002aa <unstuff_data>:
+
+uint8_t unstuff_data(uint8_t *buf, uint8_t len)
+{
+ 2aa:	fc 01       	movw	r30, r24
+	uint8_t next = buf[0];
+ 2ac:	80 81       	ld	r24, Z
+	buf[0] = 0x00;
+ 2ae:	10 82       	st	Z, r1
+	//len -= 1;
+	uint8_t tmp = next;
+ 2b0:	98 2f       	mov	r25, r24
+	while ((next < len) && tmp != 0) {
+ 2b2:	86 17       	cp	r24, r22
+ 2b4:	48 f4       	brcc	.+18     	; 0x2c8 <unstuff_data+0x1e>
+ 2b6:	99 23       	and	r25, r25
+ 2b8:	39 f0       	breq	.+14     	; 0x2c8 <unstuff_data+0x1e>
+		tmp = buf[next];
+ 2ba:	df 01       	movw	r26, r30
+ 2bc:	a8 0f       	add	r26, r24
+ 2be:	b1 1d       	adc	r27, r1
+ 2c0:	9c 91       	ld	r25, X
+		buf[next] = FRAME_BYTE;
+ 2c2:	1c 92       	st	X, r1
+		next += tmp;
+ 2c4:	89 0f       	add	r24, r25
+ 2c6:	f5 cf       	rjmp	.-22     	; 0x2b2 <unstuff_data+0x8>
+	}
+	return next;
+}
+ 2c8:	08 95       	ret
+
+000002ca <simpleserial_addcmd>:
+    simpleserial_addcmd('w', 0, ss_get_commands);
+}
+
+int simpleserial_addcmd(char c, unsigned int len, uint8_t (*fp)(uint8_t, uint8_t, uint8_t, uint8_t*))
+{
+	if(num_commands >= MAX_SS_CMDS) {
+ 2ca:	20 91 5e 20 	lds	r18, 0x205E	; 0x80205e <num_commands>
+ 2ce:	30 91 5f 20 	lds	r19, 0x205F	; 0x80205f <num_commands+0x1>
+ 2d2:	20 31       	cpi	r18, 0x10	; 16
+ 2d4:	31 05       	cpc	r19, r1
+ 2d6:	14 f0       	brlt	.+4      	; 0x2dc <simpleserial_addcmd+0x12>
+		putch('a');
+ 2d8:	81 e6       	ldi	r24, 0x61	; 97
+ 2da:	04 c0       	rjmp	.+8      	; 0x2e4 <simpleserial_addcmd+0x1a>
+		return 1;
+	}
+
+	if(len >= MAX_SS_LEN) {
+ 2dc:	60 3c       	cpi	r22, 0xC0	; 192
+ 2de:	71 05       	cpc	r23, r1
+ 2e0:	30 f0       	brcs	.+12     	; 0x2ee <simpleserial_addcmd+0x24>
+		putch('b');
+ 2e2:	82 e6       	ldi	r24, 0x62	; 98
+ 2e4:	0e 94 2b 03 	call	0x656	; 0x656 <output_ch_0>
+		return 1;
+ 2e8:	81 e0       	ldi	r24, 0x01	; 1
+ 2ea:	90 e0       	ldi	r25, 0x00	; 0
+ 2ec:	08 95       	ret
+	}
+
+	commands[num_commands].c   = c;
+ 2ee:	95 e0       	ldi	r25, 0x05	; 5
+ 2f0:	92 9f       	mul	r25, r18
+ 2f2:	f0 01       	movw	r30, r0
+ 2f4:	93 9f       	mul	r25, r19
+ 2f6:	f0 0d       	add	r31, r0
+ 2f8:	11 24       	eor	r1, r1
+ 2fa:	e2 5f       	subi	r30, 0xF2	; 242
+ 2fc:	ff 4d       	sbci	r31, 0xDF	; 223
+ 2fe:	80 83       	st	Z, r24
+	commands[num_commands].len = len;
+ 300:	61 83       	std	Z+1, r22	; 0x01
+ 302:	72 83       	std	Z+2, r23	; 0x02
+	commands[num_commands].fp  = fp;
+ 304:	43 83       	std	Z+3, r20	; 0x03
+ 306:	54 83       	std	Z+4, r21	; 0x04
+	num_commands++;
+ 308:	2f 5f       	subi	r18, 0xFF	; 255
+ 30a:	3f 4f       	sbci	r19, 0xFF	; 255
+ 30c:	20 93 5e 20 	sts	0x205E, r18	; 0x80205e <num_commands>
+ 310:	30 93 5f 20 	sts	0x205F, r19	; 0x80205f <num_commands+0x1>
+
+	return 0;
+ 314:	80 e0       	ldi	r24, 0x00	; 0
+ 316:	90 e0       	ldi	r25, 0x00	; 0
+}
+ 318:	08 95       	ret
+
+0000031a <simpleserial_init>:
+
+// Set up the SimpleSerial module by preparing internal commands
+// This just adds the "v" command for now...
+void simpleserial_init()
+{
+	simpleserial_addcmd('v', 0, check_version);
+ 31a:	40 ef       	ldi	r20, 0xF0	; 240
+ 31c:	51 e0       	ldi	r21, 0x01	; 1
+ 31e:	60 e0       	ldi	r22, 0x00	; 0
+ 320:	70 e0       	ldi	r23, 0x00	; 0
+ 322:	86 e7       	ldi	r24, 0x76	; 118
+ 324:	0e 94 65 01 	call	0x2ca	; 0x2ca <simpleserial_addcmd>
+    simpleserial_addcmd('w', 0, ss_get_commands);
+ 328:	43 e0       	ldi	r20, 0x03	; 3
+ 32a:	52 e0       	ldi	r21, 0x02	; 2
+ 32c:	60 e0       	ldi	r22, 0x00	; 0
+ 32e:	70 e0       	ldi	r23, 0x00	; 0
+ 330:	87 e7       	ldi	r24, 0x77	; 119
+ 332:	0c 94 65 01 	jmp	0x2ca	; 0x2ca <simpleserial_addcmd>
+
+00000336 <simpleserial_put>:
+	simpleserial_put('e', 0x01, &err);
+	return;
+}
+
+void simpleserial_put(char c, uint8_t size, uint8_t* output)
+{
+ 336:	cf 92       	push	r12
+ 338:	df 92       	push	r13
+ 33a:	ef 92       	push	r14
+ 33c:	ff 92       	push	r15
+ 33e:	0f 93       	push	r16
+ 340:	1f 93       	push	r17
+ 342:	cf 93       	push	r28
+ 344:	df 93       	push	r29
+ 346:	cd b7       	in	r28, 0x3d	; 61
+ 348:	de b7       	in	r29, 0x3e	; 62
+ 34a:	c0 5c       	subi	r28, 0xC0	; 192
+ 34c:	d1 09       	sbc	r29, r1
+ 34e:	cd bf       	out	0x3d, r28	; 61
+ 350:	de bf       	out	0x3e, r29	; 62
+ 352:	f6 2e       	mov	r15, r22
+	uint8_t data_buf[MAX_SS_LEN];
+	data_buf[0] = 0x00;
+ 354:	19 82       	std	Y+1, r1	; 0x01
+	data_buf[1] = c;
+ 356:	8a 83       	std	Y+2, r24	; 0x02
+	data_buf[2] = size;
+ 358:	6b 83       	std	Y+3, r22	; 0x03
+ 35a:	de 01       	movw	r26, r28
+ 35c:	14 96       	adiw	r26, 0x04	; 4
+	int i = 0;
+	for (; i < size; i++) {
+ 35e:	fa 01       	movw	r30, r20
+ 360:	6d 01       	movw	r12, r26
+ 362:	06 2f       	mov	r16, r22
+ 364:	10 e0       	ldi	r17, 0x00	; 0
+ 366:	cf 01       	movw	r24, r30
+ 368:	84 1b       	sub	r24, r20
+ 36a:	95 0b       	sbc	r25, r21
+ 36c:	80 17       	cp	r24, r16
+ 36e:	91 07       	cpc	r25, r17
+ 370:	1c f4       	brge	.+6      	; 0x378 <simpleserial_put+0x42>
+		data_buf[i + 3] = output[i];
+ 372:	81 91       	ld	r24, Z+
+ 374:	8d 93       	st	X+, r24
+ 376:	f7 cf       	rjmp	.-18     	; 0x366 <simpleserial_put+0x30>
+	}
+	data_buf[i + 3] = ss_crc(data_buf+1, size+2);
+ 378:	62 e0       	ldi	r22, 0x02	; 2
+ 37a:	6f 0d       	add	r22, r15
+ 37c:	ce 01       	movw	r24, r28
+ 37e:	02 96       	adiw	r24, 0x02	; 2
+ 380:	0e 94 20 01 	call	0x240	; 0x240 <ss_crc>
+ 384:	f6 01       	movw	r30, r12
+ 386:	e0 0f       	add	r30, r16
+ 388:	f1 1f       	adc	r31, r17
+ 38a:	80 83       	st	Z, r24
+	data_buf[i + 4] = 0x00;
+ 38c:	68 01       	movw	r12, r16
+ 38e:	84 e0       	ldi	r24, 0x04	; 4
+ 390:	c8 0e       	add	r12, r24
+ 392:	d1 1c       	adc	r13, r1
+ 394:	8e 01       	movw	r16, r28
+ 396:	0f 5f       	subi	r16, 0xFF	; 255
+ 398:	1f 4f       	sbci	r17, 0xFF	; 255
+ 39a:	f8 01       	movw	r30, r16
+ 39c:	ec 0d       	add	r30, r12
+ 39e:	fd 1d       	adc	r31, r13
+ 3a0:	10 82       	st	Z, r1
+	stuff_data(data_buf, i + 5);
+ 3a2:	65 e0       	ldi	r22, 0x05	; 5
+ 3a4:	6f 0d       	add	r22, r15
+ 3a6:	c8 01       	movw	r24, r16
+ 3a8:	0e 94 40 01 	call	0x280	; 0x280 <stuff_data>
+	for (int i = 0; i < size + 5; i++) {
+ 3ac:	78 01       	movw	r14, r16
+ 3ae:	c7 01       	movw	r24, r14
+ 3b0:	80 1b       	sub	r24, r16
+ 3b2:	91 0b       	sbc	r25, r17
+ 3b4:	c8 16       	cp	r12, r24
+ 3b6:	d9 06       	cpc	r13, r25
+ 3b8:	34 f0       	brlt	.+12     	; 0x3c6 <simpleserial_put+0x90>
+		putch(data_buf[i]);
+ 3ba:	f7 01       	movw	r30, r14
+ 3bc:	81 91       	ld	r24, Z+
+ 3be:	7f 01       	movw	r14, r30
+ 3c0:	0e 94 2b 03 	call	0x656	; 0x656 <output_ch_0>
+ 3c4:	f4 cf       	rjmp	.-24     	; 0x3ae <simpleserial_put+0x78>
+	}
+}
+ 3c6:	c0 54       	subi	r28, 0x40	; 64
+ 3c8:	df 4f       	sbci	r29, 0xFF	; 255
+ 3ca:	cd bf       	out	0x3d, r28	; 61
+ 3cc:	de bf       	out	0x3e, r29	; 62
+ 3ce:	df 91       	pop	r29
+ 3d0:	cf 91       	pop	r28
+ 3d2:	1f 91       	pop	r17
+ 3d4:	0f 91       	pop	r16
+ 3d6:	ff 90       	pop	r15
+ 3d8:	ef 90       	pop	r14
+ 3da:	df 90       	pop	r13
+ 3dc:	cf 90       	pop	r12
+ 3de:	08 95       	ret
+
+000003e0 <check_version>:
+}
+
+#define FRAME_BYTE 0x00
+
+uint8_t check_version(uint8_t cmd, uint8_t scmd, uint8_t len, uint8_t *data)
+{
+ 3e0:	cf 93       	push	r28
+ 3e2:	df 93       	push	r29
+ 3e4:	1f 92       	push	r1
+ 3e6:	cd b7       	in	r28, 0x3d	; 61
+ 3e8:	de b7       	in	r29, 0x3e	; 62
+	uint8_t ver = SS_VER;
+ 3ea:	83 e0       	ldi	r24, 0x03	; 3
+ 3ec:	89 83       	std	Y+1, r24	; 0x01
+	simpleserial_put('r', 1, &ver);
+ 3ee:	ae 01       	movw	r20, r28
+ 3f0:	4f 5f       	subi	r20, 0xFF	; 255
+ 3f2:	5f 4f       	sbci	r21, 0xFF	; 255
+ 3f4:	61 e0       	ldi	r22, 0x01	; 1
+ 3f6:	82 e7       	ldi	r24, 0x72	; 114
+ 3f8:	0e 94 9b 01 	call	0x336	; 0x336 <simpleserial_put>
+	return SS_ERR_OK;
+}
+ 3fc:	80 e0       	ldi	r24, 0x00	; 0
+ 3fe:	0f 90       	pop	r0
+ 400:	df 91       	pop	r29
+ 402:	cf 91       	pop	r28
+ 404:	08 95       	ret
+
+00000406 <ss_get_commands>:
+
+uint8_t ss_get_commands(uint8_t cmd, uint8_t scmd, uint8_t len, uint8_t *data)
+{
+ 406:	cf 93       	push	r28
+ 408:	df 93       	push	r29
+ 40a:	cd b7       	in	r28, 0x3d	; 61
+ 40c:	de b7       	in	r29, 0x3e	; 62
+ 40e:	60 97       	sbiw	r28, 0x10	; 16
+ 410:	cd bf       	out	0x3d, r28	; 61
+ 412:	de bf       	out	0x3e, r29	; 62
+    uint8_t cmd_chars[MAX_SS_CMDS];
+    for (uint8_t i = 0; i < (num_commands & 0xFF); i++) {
+ 414:	60 91 5e 20 	lds	r22, 0x205E	; 0x80205e <num_commands>
+ 418:	70 91 5f 20 	lds	r23, 0x205F	; 0x80205f <num_commands+0x1>
+ 41c:	ab 01       	movw	r20, r22
+ 41e:	55 27       	eor	r21, r21
+ 420:	20 e0       	ldi	r18, 0x00	; 0
+        cmd_chars[i] = commands[i].c;
+ 422:	35 e0       	ldi	r19, 0x05	; 5
+}
+
+uint8_t ss_get_commands(uint8_t cmd, uint8_t scmd, uint8_t len, uint8_t *data)
+{
+    uint8_t cmd_chars[MAX_SS_CMDS];
+    for (uint8_t i = 0; i < (num_commands & 0xFF); i++) {
+ 424:	82 2f       	mov	r24, r18
+ 426:	90 e0       	ldi	r25, 0x00	; 0
+ 428:	84 17       	cp	r24, r20
+ 42a:	95 07       	cpc	r25, r21
+ 42c:	8c f4       	brge	.+34     	; 0x450 <ss_get_commands+0x4a>
+        cmd_chars[i] = commands[i].c;
+ 42e:	a1 e0       	ldi	r26, 0x01	; 1
+ 430:	b0 e0       	ldi	r27, 0x00	; 0
+ 432:	ac 0f       	add	r26, r28
+ 434:	bd 1f       	adc	r27, r29
+ 436:	a8 0f       	add	r26, r24
+ 438:	b9 1f       	adc	r27, r25
+ 43a:	38 9f       	mul	r19, r24
+ 43c:	f0 01       	movw	r30, r0
+ 43e:	39 9f       	mul	r19, r25
+ 440:	f0 0d       	add	r31, r0
+ 442:	11 24       	eor	r1, r1
+ 444:	e2 5f       	subi	r30, 0xF2	; 242
+ 446:	ff 4d       	sbci	r31, 0xDF	; 223
+ 448:	80 81       	ld	r24, Z
+ 44a:	8c 93       	st	X, r24
+}
+
+uint8_t ss_get_commands(uint8_t cmd, uint8_t scmd, uint8_t len, uint8_t *data)
+{
+    uint8_t cmd_chars[MAX_SS_CMDS];
+    for (uint8_t i = 0; i < (num_commands & 0xFF); i++) {
+ 44c:	2f 5f       	subi	r18, 0xFF	; 255
+ 44e:	ea cf       	rjmp	.-44     	; 0x424 <ss_get_commands+0x1e>
+        cmd_chars[i] = commands[i].c;
+    }
+
+    simpleserial_put('r', num_commands & 0xFF, (void *)cmd_chars);
+ 450:	ae 01       	movw	r20, r28
+ 452:	4f 5f       	subi	r20, 0xFF	; 255
+ 454:	5f 4f       	sbci	r21, 0xFF	; 255
+ 456:	82 e7       	ldi	r24, 0x72	; 114
+ 458:	0e 94 9b 01 	call	0x336	; 0x336 <simpleserial_put>
+    return 0x00;
+
+}
+ 45c:	80 e0       	ldi	r24, 0x00	; 0
+ 45e:	60 96       	adiw	r28, 0x10	; 16
+ 460:	cd bf       	out	0x3d, r28	; 61
+ 462:	de bf       	out	0x3e, r29	; 62
+ 464:	df 91       	pop	r29
+ 466:	cf 91       	pop	r28
+ 468:	08 95       	ret
+
+0000046a <simpleserial_get>:
+
+	return 0;
+}
+
+void simpleserial_get(void)
+{
+ 46a:	5f 92       	push	r5
+ 46c:	6f 92       	push	r6
+ 46e:	7f 92       	push	r7
+ 470:	8f 92       	push	r8
+ 472:	9f 92       	push	r9
+ 474:	af 92       	push	r10
+ 476:	bf 92       	push	r11
+ 478:	cf 92       	push	r12
+ 47a:	df 92       	push	r13
+ 47c:	ef 92       	push	r14
+ 47e:	ff 92       	push	r15
+ 480:	0f 93       	push	r16
+ 482:	1f 93       	push	r17
+ 484:	cf 93       	push	r28
+ 486:	df 93       	push	r29
+ 488:	cd b7       	in	r28, 0x3d	; 61
+ 48a:	de b7       	in	r29, 0x3e	; 62
+ 48c:	c1 5c       	subi	r28, 0xC1	; 193
+ 48e:	d1 09       	sbc	r29, r1
+ 490:	cd bf       	out	0x3d, r28	; 61
+ 492:	de bf       	out	0x3e, r29	; 62
+	uint8_t data_buf[MAX_SS_LEN];
+	uint8_t err = 0;
+ 494:	cf 53       	subi	r28, 0x3F	; 63
+ 496:	df 4f       	sbci	r29, 0xFF	; 255
+ 498:	18 82       	st	Y, r1
+ 49a:	c1 5c       	subi	r28, 0xC1	; 193
+ 49c:	d0 40       	sbci	r29, 0x00	; 0
+ 49e:	ce 01       	movw	r24, r28
+ 4a0:	01 96       	adiw	r24, 0x01	; 1
+ 4a2:	6c 01       	movw	r12, r24
+ 4a4:	7e 01       	movw	r14, r28
+ 4a6:	95 e0       	ldi	r25, 0x05	; 5
+ 4a8:	e9 0e       	add	r14, r25
+ 4aa:	f1 1c       	adc	r15, r1
+ 4ac:	86 01       	movw	r16, r12
+ 4ae:	37 01       	movw	r6, r14
+
+	for (int i = 0; i < 4; i++) {
+		data_buf[i] = getch(); //PTR, cmd, scmd, len
+ 4b0:	0e 94 24 03 	call	0x648	; 0x648 <input_ch_0>
+ 4b4:	f8 01       	movw	r30, r16
+ 4b6:	81 93       	st	Z+, r24
+ 4b8:	8f 01       	movw	r16, r30
+		if (data_buf[i] == FRAME_BYTE) {
+ 4ba:	81 11       	cpse	r24, r1
+ 4bc:	02 c0       	rjmp	.+4      	; 0x4c2 <simpleserial_get+0x58>
+			err = SS_ERR_FRAME_BYTE;
+ 4be:	85 e0       	ldi	r24, 0x05	; 5
+ 4c0:	6d c0       	rjmp	.+218    	; 0x59c <simpleserial_get+0x132>
+void simpleserial_get(void)
+{
+	uint8_t data_buf[MAX_SS_LEN];
+	uint8_t err = 0;
+
+	for (int i = 0; i < 4; i++) {
+ 4c2:	ee 15       	cp	r30, r14
+ 4c4:	ff 05       	cpc	r31, r15
+ 4c6:	a1 f7       	brne	.-24     	; 0x4b0 <simpleserial_get+0x46>
+		if (data_buf[i] == FRAME_BYTE) {
+			err = SS_ERR_FRAME_BYTE;
+			goto ERROR;
+		}
+	}
+	uint8_t next_frame = unstuff_data(data_buf, 4);
+ 4c8:	64 e0       	ldi	r22, 0x04	; 4
+ 4ca:	c6 01       	movw	r24, r12
+ 4cc:	0e 94 55 01 	call	0x2aa	; 0x2aa <unstuff_data>
+ 4d0:	58 2e       	mov	r5, r24
+
+	// check for valid command
+	uint8_t c = 0;
+	for(c = 0; c < num_commands; c++)
+ 4d2:	20 91 5e 20 	lds	r18, 0x205E	; 0x80205e <num_commands>
+ 4d6:	30 91 5f 20 	lds	r19, 0x205F	; 0x80205f <num_commands+0x1>
+	{
+		if(commands[c].c == data_buf[1])
+ 4da:	9a 81       	ldd	r25, Y+2	; 0x02
+	}
+	uint8_t next_frame = unstuff_data(data_buf, 4);
+
+	// check for valid command
+	uint8_t c = 0;
+	for(c = 0; c < num_commands; c++)
+ 4dc:	80 e0       	ldi	r24, 0x00	; 0
+	{
+		if(commands[c].c == data_buf[1])
+ 4de:	45 e0       	ldi	r20, 0x05	; 5
+	}
+	uint8_t next_frame = unstuff_data(data_buf, 4);
+
+	// check for valid command
+	uint8_t c = 0;
+	for(c = 0; c < num_commands; c++)
+ 4e0:	a8 2e       	mov	r10, r24
+ 4e2:	b1 2c       	mov	r11, r1
+ 4e4:	a2 16       	cp	r10, r18
+ 4e6:	b3 06       	cpc	r11, r19
+ 4e8:	64 f4       	brge	.+24     	; 0x502 <simpleserial_get+0x98>
+	{
+		if(commands[c].c == data_buf[1])
+ 4ea:	4a 9d       	mul	r20, r10
+ 4ec:	f0 01       	movw	r30, r0
+ 4ee:	4b 9d       	mul	r20, r11
+ 4f0:	f0 0d       	add	r31, r0
+ 4f2:	11 24       	eor	r1, r1
+ 4f4:	e2 5f       	subi	r30, 0xF2	; 242
+ 4f6:	ff 4d       	sbci	r31, 0xDF	; 223
+ 4f8:	50 81       	ld	r21, Z
+ 4fa:	59 17       	cp	r21, r25
+ 4fc:	39 f0       	breq	.+14     	; 0x50c <simpleserial_get+0xa2>
+	}
+	uint8_t next_frame = unstuff_data(data_buf, 4);
+
+	// check for valid command
+	uint8_t c = 0;
+	for(c = 0; c < num_commands; c++)
+ 4fe:	8f 5f       	subi	r24, 0xFF	; 255
+ 500:	ef cf       	rjmp	.-34     	; 0x4e0 <simpleserial_get+0x76>
+	{
+		if(commands[c].c == data_buf[1])
+			break;
+	}
+
+	if (c == num_commands) {
+ 502:	a2 16       	cp	r10, r18
+ 504:	b3 06       	cpc	r11, r19
+ 506:	11 f4       	brne	.+4      	; 0x50c <simpleserial_get+0xa2>
+		err = SS_ERR_CMD;
+ 508:	81 e0       	ldi	r24, 0x01	; 1
+ 50a:	48 c0       	rjmp	.+144    	; 0x59c <simpleserial_get+0x132>
+		goto ERROR;
+	}
+
+	//check that next frame not beyond end of message
+	// account for cmd, scmd, len, data, crc, end of frame
+	if ((data_buf[3] + 5) < next_frame) {
+ 50c:	8c 81       	ldd	r24, Y+4	; 0x04
+ 50e:	90 e0       	ldi	r25, 0x00	; 0
+ 510:	05 96       	adiw	r24, 0x05	; 5
+ 512:	85 2c       	mov	r8, r5
+ 514:	91 2c       	mov	r9, r1
+ 516:	88 15       	cp	r24, r8
+ 518:	99 05       	cpc	r25, r9
+ 51a:	4c f4       	brge	.+18     	; 0x52e <simpleserial_get+0xc4>
+		err = SS_ERR_LEN;
+ 51c:	84 e0       	ldi	r24, 0x04	; 4
+ 51e:	3e c0       	rjmp	.+124    	; 0x59c <simpleserial_get+0x132>
+
+	// read in data
+	// eq to len + crc + frame end
+	int i = 4;
+	for (; i < data_buf[3] + 5; i++) {
+		data_buf[i] = getch();
+ 520:	0e 94 24 03 	call	0x648	; 0x648 <input_ch_0>
+ 524:	f7 01       	movw	r30, r14
+ 526:	81 93       	st	Z+, r24
+ 528:	7f 01       	movw	r14, r30
+		if (data_buf[i] == FRAME_BYTE) {
+ 52a:	88 23       	and	r24, r24
+ 52c:	41 f2       	breq	.-112    	; 0x4be <simpleserial_get+0x54>
+ 52e:	87 01       	movw	r16, r14
+ 530:	0c 19       	sub	r16, r12
+ 532:	1d 09       	sbc	r17, r13
+	}
+
+	// read in data
+	// eq to len + crc + frame end
+	int i = 4;
+	for (; i < data_buf[3] + 5; i++) {
+ 534:	8c 81       	ldd	r24, Y+4	; 0x04
+ 536:	90 e0       	ldi	r25, 0x00	; 0
+ 538:	04 96       	adiw	r24, 0x04	; 4
+ 53a:	80 17       	cp	r24, r16
+ 53c:	91 07       	cpc	r25, r17
+ 53e:	84 f7       	brge	.-32     	; 0x520 <simpleserial_get+0xb6>
+			goto ERROR;
+		}
+	}
+
+	//check that final byte is the FRAME_BYTE
+	data_buf[i] = getch();
+ 540:	0e 94 24 03 	call	0x648	; 0x648 <input_ch_0>
+ 544:	f6 01       	movw	r30, r12
+ 546:	e0 0f       	add	r30, r16
+ 548:	f1 1f       	adc	r31, r17
+ 54a:	80 83       	st	Z, r24
+	if (data_buf[i] != FRAME_BYTE) {
+ 54c:	81 11       	cpse	r24, r1
+ 54e:	e6 cf       	rjmp	.-52     	; 0x51c <simpleserial_get+0xb2>
+		err = SS_ERR_LEN;
+		goto ERROR;
+	}
+
+	//fully unstuff data now
+	unstuff_data(data_buf + next_frame, i - next_frame + 1);
+ 550:	60 2f       	mov	r22, r16
+ 552:	65 19       	sub	r22, r5
+ 554:	6f 5f       	subi	r22, 0xFF	; 255
+ 556:	c6 01       	movw	r24, r12
+ 558:	88 0d       	add	r24, r8
+ 55a:	99 1d       	adc	r25, r9
+ 55c:	0e 94 55 01 	call	0x2aa	; 0x2aa <unstuff_data>
+
+	//calc crc excluding original frame offset and frame end and crc
+	uint8_t crc = ss_crc(data_buf+1, i-2);
+ 560:	6e ef       	ldi	r22, 0xFE	; 254
+ 562:	60 0f       	add	r22, r16
+ 564:	ce 01       	movw	r24, r28
+ 566:	02 96       	adiw	r24, 0x02	; 2
+ 568:	0e 94 20 01 	call	0x240	; 0x240 <ss_crc>
+	if (crc != data_buf[i-1]) {
+ 56c:	fe 01       	movw	r30, r28
+ 56e:	e0 0f       	add	r30, r16
+ 570:	f1 1f       	adc	r31, r17
+ 572:	90 81       	ld	r25, Z
+ 574:	89 17       	cp	r24, r25
+ 576:	11 f0       	breq	.+4      	; 0x57c <simpleserial_get+0x112>
+		err = SS_ERR_CRC;
+ 578:	82 e0       	ldi	r24, 0x02	; 2
+ 57a:	10 c0       	rjmp	.+32     	; 0x59c <simpleserial_get+0x132>
+		goto ERROR;
+	}
+
+	err = commands[c].fp(data_buf[1], data_buf[2], data_buf[3], data_buf+4);
+ 57c:	85 e0       	ldi	r24, 0x05	; 5
+ 57e:	8a 9d       	mul	r24, r10
+ 580:	f0 01       	movw	r30, r0
+ 582:	8b 9d       	mul	r24, r11
+ 584:	f0 0d       	add	r31, r0
+ 586:	11 24       	eor	r1, r1
+ 588:	e2 5f       	subi	r30, 0xF2	; 242
+ 58a:	ff 4d       	sbci	r31, 0xDF	; 223
+ 58c:	03 80       	ldd	r0, Z+3	; 0x03
+ 58e:	f4 81       	ldd	r31, Z+4	; 0x04
+ 590:	e0 2d       	mov	r30, r0
+ 592:	93 01       	movw	r18, r6
+ 594:	4c 81       	ldd	r20, Y+4	; 0x04
+ 596:	6b 81       	ldd	r22, Y+3	; 0x03
+ 598:	8a 81       	ldd	r24, Y+2	; 0x02
+ 59a:	19 95       	eicall
+ 59c:	cf 53       	subi	r28, 0x3F	; 63
+ 59e:	df 4f       	sbci	r29, 0xFF	; 255
+ 5a0:	88 83       	st	Y, r24
+ 5a2:	c1 5c       	subi	r28, 0xC1	; 193
+ 5a4:	d0 40       	sbci	r29, 0x00	; 0
+
+ERROR:
+	simpleserial_put('e', 0x01, &err);
+ 5a6:	ae 01       	movw	r20, r28
+ 5a8:	4f 53       	subi	r20, 0x3F	; 63
+ 5aa:	5f 4f       	sbci	r21, 0xFF	; 255
+ 5ac:	61 e0       	ldi	r22, 0x01	; 1
+ 5ae:	85 e6       	ldi	r24, 0x65	; 101
+ 5b0:	0e 94 9b 01 	call	0x336	; 0x336 <simpleserial_put>
+	return;
+}
+ 5b4:	cf 53       	subi	r28, 0x3F	; 63
+ 5b6:	df 4f       	sbci	r29, 0xFF	; 255
+ 5b8:	cd bf       	out	0x3d, r28	; 61
+ 5ba:	de bf       	out	0x3e, r29	; 62
+ 5bc:	df 91       	pop	r29
+ 5be:	cf 91       	pop	r28
+ 5c0:	1f 91       	pop	r17
+ 5c2:	0f 91       	pop	r16
+ 5c4:	ff 90       	pop	r15
+ 5c6:	ef 90       	pop	r14
+ 5c8:	df 90       	pop	r13
+ 5ca:	cf 90       	pop	r12
+ 5cc:	bf 90       	pop	r11
+ 5ce:	af 90       	pop	r10
+ 5d0:	9f 90       	pop	r9
+ 5d2:	8f 90       	pop	r8
+ 5d4:	7f 90       	pop	r7
+ 5d6:	6f 90       	pop	r6
+ 5d8:	5f 90       	pop	r5
+ 5da:	08 95       	ret
+
+000005dc <init_uart0>:
+   )
+   {
+/* This PORT setting is only valid to USARTC0 if other USARTs is used a
+	 * different PORT and/or pins is used. */
+	/* PIN3 (TXD0) as output. */
+	PORTC.DIRSET = PIN3_bm;
+ 5dc:	e0 e4       	ldi	r30, 0x40	; 64
+ 5de:	f6 e0       	ldi	r31, 0x06	; 6
+ 5e0:	88 e0       	ldi	r24, 0x08	; 8
+ 5e2:	81 83       	std	Z+1, r24	; 0x01
+
+	/* PC2 (RXD0) as input. */
+	PORTC.DIRCLR = PIN2_bm;
+ 5e4:	84 e0       	ldi	r24, 0x04	; 4
+ 5e6:	82 83       	std	Z+2, r24	; 0x02
+
+	/* USARTC0, 8 Data bits, No Parity, 1 Stop bit. */
+	USART_Format_Set(&USART, USART_CHSIZE_8BIT_gc, USART_PMODE_DISABLED_gc, false);
+ 5e8:	e0 ea       	ldi	r30, 0xA0	; 160
+ 5ea:	f8 e0       	ldi	r31, 0x08	; 8
+ 5ec:	83 e0       	ldi	r24, 0x03	; 3
+ 5ee:	85 83       	std	Z+5, r24	; 0x05
+	 *
+	 * Baudrate select = (1/(16*(((I/O clock frequency)/Baudrate)-1)
+	 *                 = 12
+	 */
+	#if SS_VER==SS_VER_2_1
+	USART_Baudrate_Set(&USART, 1, 0);
+ 5f0:	81 e0       	ldi	r24, 0x01	; 1
+ 5f2:	86 83       	std	Z+6, r24	; 0x06
+ 5f4:	17 82       	std	Z+7, r1	; 0x07
+	#else
+	USART_Baudrate_Set(&USART, 11, 0);
+	#endif
+
+	/* Enable both RX and TX. */
+	USART_Rx_Enable(&USART);
+ 5f6:	84 81       	ldd	r24, Z+4	; 0x04
+ 5f8:	80 61       	ori	r24, 0x10	; 16
+ 5fa:	84 83       	std	Z+4, r24	; 0x04
+	USART_Tx_Enable(&USART);
+ 5fc:	84 81       	ldd	r24, Z+4	; 0x04
+ 5fe:	88 60       	ori	r24, 0x08	; 8
+ 600:	84 83       	std	Z+4, r24	; 0x04
+ 602:	08 95       	ret
+
+00000604 <input_ch_w_timeout_0>:
+unsigned char									input_ch_w_timeout_0
+	(
+   char *					 	data,
+   volatile unsigned int				timeout
+   )
+   {
+ 604:	cf 93       	push	r28
+ 606:	df 93       	push	r29
+ 608:	1f 92       	push	r1
+ 60a:	1f 92       	push	r1
+ 60c:	cd b7       	in	r28, 0x3d	; 61
+ 60e:	de b7       	in	r29, 0x3e	; 62
+ 610:	69 83       	std	Y+1, r22	; 0x01
+ 612:	7a 83       	std	Y+2, r23	; 0x02
+   unsigned int				timeout_counter = 0;
+ 614:	20 e0       	ldi	r18, 0x00	; 0
+ 616:	30 e0       	ldi	r19, 0x00	; 0
+
+   
+   //check if a byte has been recieved or if the timeout has been excedded
+   while (timeout_counter != timeout)
+ 618:	49 81       	ldd	r20, Y+1	; 0x01
+ 61a:	5a 81       	ldd	r21, Y+2	; 0x02
+ 61c:	24 17       	cp	r18, r20
+ 61e:	35 07       	cpc	r19, r21
+ 620:	69 f0       	breq	.+26     	; 0x63c <input_ch_w_timeout_0+0x38>
+		{	
+		if (USART_IsRXComplete(&USART))
+ 622:	40 91 a1 08 	lds	r20, 0x08A1	; 0x8008a1 <__TEXT_REGION_LENGTH__+0x7de8a1>
+ 626:	47 ff       	sbrs	r20, 7
+ 628:	06 c0       	rjmp	.+12     	; 0x636 <input_ch_w_timeout_0+0x32>
+			{
+			*data = USART_GetChar(&USART);
+ 62a:	20 91 a0 08 	lds	r18, 0x08A0	; 0x8008a0 <__TEXT_REGION_LENGTH__+0x7de8a0>
+ 62e:	fc 01       	movw	r30, r24
+ 630:	20 83       	st	Z, r18
+			return BYTE_REC;
+ 632:	81 e0       	ldi	r24, 0x01	; 1
+ 634:	04 c0       	rjmp	.+8      	; 0x63e <input_ch_w_timeout_0+0x3a>
+			}
+		timeout_counter++;
+ 636:	2f 5f       	subi	r18, 0xFF	; 255
+ 638:	3f 4f       	sbci	r19, 0xFF	; 255
+ 63a:	ee cf       	rjmp	.-36     	; 0x618 <input_ch_w_timeout_0+0x14>
+		}
+		
+	return TIMEOUT;
+ 63c:	80 e0       	ldi	r24, 0x00	; 0
+	}
+ 63e:	0f 90       	pop	r0
+ 640:	0f 90       	pop	r0
+ 642:	df 91       	pop	r29
+ 644:	cf 91       	pop	r28
+ 646:	08 95       	ret
+
+00000648 <input_ch_0>:
+	(
+   void
+   )
+   {
+   //check if a byte has been recieved or if the timeout has been excedded
+   while (!USART_IsRXComplete(&USART))
+ 648:	80 91 a1 08 	lds	r24, 0x08A1	; 0x8008a1 <__TEXT_REGION_LENGTH__+0x7de8a1>
+ 64c:	87 ff       	sbrs	r24, 7
+ 64e:	fc cf       	rjmp	.-8      	; 0x648 <input_ch_0>
+		{
+		continue;		
+		}		
+	return USART_GetChar(&USART);;
+ 650:	80 91 a0 08 	lds	r24, 0x08A0	; 0x8008a0 <__TEXT_REGION_LENGTH__+0x7de8a0>
+	}
+ 654:	08 95       	ret
+
+00000656 <output_ch_0>:
+void												output_ch_0
+	(
+	char							data
+	)
+	{
+	while(!USART_IsTXDataRegisterEmpty(&USART));
+ 656:	90 91 a1 08 	lds	r25, 0x08A1	; 0x8008a1 <__TEXT_REGION_LENGTH__+0x7de8a1>
+ 65a:	95 ff       	sbrs	r25, 5
+ 65c:	fc cf       	rjmp	.-8      	; 0x656 <output_ch_0>
+	USART_PutChar(&USART, data);
+ 65e:	80 93 a0 08 	sts	0x08A0, r24	; 0x8008a0 <__TEXT_REGION_LENGTH__+0x7de8a0>
+ 662:	08 95       	ret
+
+00000664 <USART_InterruptDriver_Initialize>:
+ *  \param dreIntLevel          Data register empty interrupt level.
+ */
+void USART_InterruptDriver_Initialize(USART_data_t * usart_data,
+                                      USART_t * usart,
+                                      USART_DREINTLVL_t dreIntLevel)
+{
+ 664:	fc 01       	movw	r30, r24
+	usart_data->usart = usart;
+ 666:	60 83       	st	Z, r22
+ 668:	71 83       	std	Z+1, r23	; 0x01
+	usart_data->dreIntLevel = dreIntLevel;
+ 66a:	42 83       	std	Z+2, r20	; 0x02
+
+	usart_data->buffer.RX_Tail = 0;
+ 66c:	14 86       	std	Z+12, r1	; 0x0c
+	usart_data->buffer.RX_Head = 0;
+ 66e:	13 86       	std	Z+11, r1	; 0x0b
+	usart_data->buffer.TX_Tail = 0;
+ 670:	16 86       	std	Z+14, r1	; 0x0e
+	usart_data->buffer.TX_Head = 0;
+ 672:	15 86       	std	Z+13, r1	; 0x0d
+ 674:	08 95       	ret
+
+00000676 <USART_InterruptDriver_DreInterruptLevel_Set>:
+ *  \param dreIntLevel        Interrupt level of the DRE interrupt.
+ */
+void USART_InterruptDriver_DreInterruptLevel_Set(USART_data_t * usart_data,
+                                                 USART_DREINTLVL_t dreIntLevel)
+{
+	usart_data->dreIntLevel = dreIntLevel;
+ 676:	fc 01       	movw	r30, r24
+ 678:	62 83       	std	Z+2, r22	; 0x02
+ 67a:	08 95       	ret
+
+0000067c <USART_TXBuffer_FreeSpace>:
+ *
+ *  \retval true      There is data in the receive buffer.
+ *  \retval false     The receive buffer is empty.
+ */
+bool USART_TXBuffer_FreeSpace(USART_data_t * usart_data)
+{
+ 67c:	fc 01       	movw	r30, r24
+	/* Make copies to make sure that volatile access is specified. */
+	uint8_t tempHead = (usart_data->buffer.TX_Head + 1) & USART_TX_BUFFER_MASK;
+ 67e:	95 85       	ldd	r25, Z+13	; 0x0d
+	uint8_t tempTail = usart_data->buffer.TX_Tail;
+ 680:	26 85       	ldd	r18, Z+14	; 0x0e
+
+	/* There are data left in the buffer unless Head and Tail are equal. */
+	return (tempHead != tempTail);
+ 682:	9f 5f       	subi	r25, 0xFF	; 255
+ 684:	93 70       	andi	r25, 0x03	; 3
+ 686:	81 e0       	ldi	r24, 0x01	; 1
+ 688:	92 13       	cpse	r25, r18
+ 68a:	01 c0       	rjmp	.+2      	; 0x68e <USART_TXBuffer_FreeSpace+0x12>
+ 68c:	80 e0       	ldi	r24, 0x00	; 0
+}
+ 68e:	08 95       	ret
+
+00000690 <USART_TXBuffer_PutByte>:
+ *
+ *  \param usart_data The USART_data_t struct instance.
+ *  \param data       The data to send.
+ */
+bool USART_TXBuffer_PutByte(USART_data_t * usart_data, uint8_t data)
+{
+ 690:	1f 93       	push	r17
+ 692:	cf 93       	push	r28
+ 694:	df 93       	push	r29
+ 696:	ec 01       	movw	r28, r24
+ 698:	16 2f       	mov	r17, r22
+	uint8_t tempTX_Head;
+	bool TXBuffer_FreeSpace;
+	USART_Buffer_t * TXbufPtr;
+
+	TXbufPtr = &usart_data->buffer;
+	TXBuffer_FreeSpace = USART_TXBuffer_FreeSpace(usart_data);
+ 69a:	0e 94 3e 03 	call	0x67c	; 0x67c <USART_TXBuffer_FreeSpace>
+
+
+	if(TXBuffer_FreeSpace)
+ 69e:	88 23       	and	r24, r24
+ 6a0:	79 f0       	breq	.+30     	; 0x6c0 <USART_TXBuffer_PutByte+0x30>
+	{
+	  	tempTX_Head = TXbufPtr->TX_Head;
+ 6a2:	9d 85       	ldd	r25, Y+13	; 0x0d
+	  	TXbufPtr->TX[tempTX_Head]= data;
+ 6a4:	fe 01       	movw	r30, r28
+ 6a6:	e9 0f       	add	r30, r25
+ 6a8:	f1 1d       	adc	r31, r1
+ 6aa:	17 83       	std	Z+7, r17	; 0x07
+		/* Advance buffer head. */
+		TXbufPtr->TX_Head = (tempTX_Head + 1) & USART_TX_BUFFER_MASK;
+ 6ac:	9f 5f       	subi	r25, 0xFF	; 255
+ 6ae:	93 70       	andi	r25, 0x03	; 3
+ 6b0:	9d 87       	std	Y+13, r25	; 0x0d
+
+		/* Enable DRE interrupt. */
+		tempCTRLA = usart_data->usart->CTRLA;
+ 6b2:	e8 81       	ld	r30, Y
+ 6b4:	f9 81       	ldd	r31, Y+1	; 0x01
+ 6b6:	93 81       	ldd	r25, Z+3	; 0x03
+		tempCTRLA = (tempCTRLA & ~USART_DREINTLVL_gm) | usart_data->dreIntLevel;
+ 6b8:	9c 7f       	andi	r25, 0xFC	; 252
+ 6ba:	2a 81       	ldd	r18, Y+2	; 0x02
+ 6bc:	92 2b       	or	r25, r18
+		usart_data->usart->CTRLA = tempCTRLA;
+ 6be:	93 83       	std	Z+3, r25	; 0x03
+	}
+	return TXBuffer_FreeSpace;
+}
+ 6c0:	df 91       	pop	r29
+ 6c2:	cf 91       	pop	r28
+ 6c4:	1f 91       	pop	r17
+ 6c6:	08 95       	ret
+
+000006c8 <USART_RXBufferData_Available>:
+ *  \retval false     The receive buffer is empty.
+ */
+bool USART_RXBufferData_Available(USART_data_t * usart_data)
+{
+	/* Make copies to make sure that volatile access is specified. */
+	uint8_t tempHead = usart_data->buffer.RX_Head;
+ 6c8:	fc 01       	movw	r30, r24
+ 6ca:	23 85       	ldd	r18, Z+11	; 0x0b
+	uint8_t tempTail = usart_data->buffer.RX_Tail;
+ 6cc:	94 85       	ldd	r25, Z+12	; 0x0c
+
+	/* There are data left in the buffer unless Head and Tail are equal. */
+	return (tempHead != tempTail);
+ 6ce:	81 e0       	ldi	r24, 0x01	; 1
+ 6d0:	29 13       	cpse	r18, r25
+ 6d2:	01 c0       	rjmp	.+2      	; 0x6d6 <USART_RXBufferData_Available+0xe>
+ 6d4:	80 e0       	ldi	r24, 0x00	; 0
+}
+ 6d6:	08 95       	ret
+
+000006d8 <USART_RXBuffer_GetByte>:
+ *  \param usart_data       The USART_data_t struct instance.
+ *
+ *  \return         Received data.
+ */
+uint8_t USART_RXBuffer_GetByte(USART_data_t * usart_data)
+{
+ 6d8:	fc 01       	movw	r30, r24
+	USART_Buffer_t * bufPtr;
+	uint8_t ans;
+
+	bufPtr = &usart_data->buffer;
+	ans = (bufPtr->RX[bufPtr->RX_Tail]);
+ 6da:	84 85       	ldd	r24, Z+12	; 0x0c
+ 6dc:	df 01       	movw	r26, r30
+ 6de:	a8 0f       	add	r26, r24
+ 6e0:	b1 1d       	adc	r27, r1
+ 6e2:	13 96       	adiw	r26, 0x03	; 3
+ 6e4:	8c 91       	ld	r24, X
+
+	/* Advance buffer tail. */
+	bufPtr->RX_Tail = (bufPtr->RX_Tail + 1) & USART_RX_BUFFER_MASK;
+ 6e6:	94 85       	ldd	r25, Z+12	; 0x0c
+ 6e8:	9f 5f       	subi	r25, 0xFF	; 255
+ 6ea:	93 70       	andi	r25, 0x03	; 3
+ 6ec:	94 87       	std	Z+12, r25	; 0x0c
+
+	return ans;
+}
+ 6ee:	08 95       	ret
+
+000006f0 <USART_RXComplete>:
+ *  Stores received data in RX software buffer.
+ *
+ *  \param usart_data      The USART_data_t struct instance.
+ */
+bool USART_RXComplete(USART_data_t * usart_data)
+{
+ 6f0:	fc 01       	movw	r30, r24
+	USART_Buffer_t * bufPtr;
+	bool ans;
+
+	bufPtr = &usart_data->buffer;
+	/* Advance buffer head. */
+	uint8_t tempRX_Head = (bufPtr->RX_Head + 1) & USART_RX_BUFFER_MASK;
+ 6f2:	83 85       	ldd	r24, Z+11	; 0x0b
+ 6f4:	8f 5f       	subi	r24, 0xFF	; 255
+ 6f6:	83 70       	andi	r24, 0x03	; 3
+
+	/* Check for overflow. */
+	uint8_t tempRX_Tail = bufPtr->RX_Tail;
+ 6f8:	24 85       	ldd	r18, Z+12	; 0x0c
+	uint8_t data = usart_data->usart->DATA;
+ 6fa:	a0 81       	ld	r26, Z
+ 6fc:	b1 81       	ldd	r27, Z+1	; 0x01
+ 6fe:	9c 91       	ld	r25, X
+
+	if (tempRX_Head == tempRX_Tail) {
+ 700:	82 17       	cp	r24, r18
+ 702:	49 f0       	breq	.+18     	; 0x716 <USART_RXComplete+0x26>
+	  	ans = false;
+	}else{
+		ans = true;
+		usart_data->buffer.RX[usart_data->buffer.RX_Head] = data;
+ 704:	23 85       	ldd	r18, Z+11	; 0x0b
+ 706:	df 01       	movw	r26, r30
+ 708:	a2 0f       	add	r26, r18
+ 70a:	b1 1d       	adc	r27, r1
+ 70c:	13 96       	adiw	r26, 0x03	; 3
+ 70e:	9c 93       	st	X, r25
+		usart_data->buffer.RX_Head = tempRX_Head;
+ 710:	83 87       	std	Z+11, r24	; 0x0b
+	uint8_t data = usart_data->usart->DATA;
+
+	if (tempRX_Head == tempRX_Tail) {
+	  	ans = false;
+	}else{
+		ans = true;
+ 712:	81 e0       	ldi	r24, 0x01	; 1
+ 714:	08 95       	ret
+	/* Check for overflow. */
+	uint8_t tempRX_Tail = bufPtr->RX_Tail;
+	uint8_t data = usart_data->usart->DATA;
+
+	if (tempRX_Head == tempRX_Tail) {
+	  	ans = false;
+ 716:	80 e0       	ldi	r24, 0x00	; 0
+		ans = true;
+		usart_data->buffer.RX[usart_data->buffer.RX_Head] = data;
+		usart_data->buffer.RX_Head = tempRX_Head;
+	}
+	return ans;
+}
+ 718:	08 95       	ret
+
+0000071a <USART_DataRegEmpty>:
+ *  is empty. Argument is pointer to USART (USART_data_t).
+ *
+ *  \param usart_data      The USART_data_t struct instance.
+ */
+void USART_DataRegEmpty(USART_data_t * usart_data)
+{
+ 71a:	cf 93       	push	r28
+ 71c:	df 93       	push	r29
+ 71e:	fc 01       	movw	r30, r24
+	USART_Buffer_t * bufPtr;
+	bufPtr = &usart_data->buffer;
+
+	/* Check if all data is transmitted. */
+	uint8_t tempTX_Tail = usart_data->buffer.TX_Tail;
+ 720:	96 85       	ldd	r25, Z+14	; 0x0e
+	if (bufPtr->TX_Head == tempTX_Tail){
+ 722:	85 85       	ldd	r24, Z+13	; 0x0d
+ 724:	a0 81       	ld	r26, Z
+ 726:	b1 81       	ldd	r27, Z+1	; 0x01
+ 728:	98 13       	cpse	r25, r24
+ 72a:	07 c0       	rjmp	.+14     	; 0x73a <USART_DataRegEmpty+0x20>
+	    /* Disable DRE interrupts. */
+		uint8_t tempCTRLA = usart_data->usart->CTRLA;
+ 72c:	13 96       	adiw	r26, 0x03	; 3
+ 72e:	8c 91       	ld	r24, X
+ 730:	13 97       	sbiw	r26, 0x03	; 3
+		tempCTRLA = (tempCTRLA & ~USART_DREINTLVL_gm) | USART_DREINTLVL_OFF_gc;
+ 732:	8c 7f       	andi	r24, 0xFC	; 252
+		usart_data->usart->CTRLA = tempCTRLA;
+ 734:	13 96       	adiw	r26, 0x03	; 3
+ 736:	8c 93       	st	X, r24
+ 738:	0a c0       	rjmp	.+20     	; 0x74e <USART_DataRegEmpty+0x34>
+
+	}else{
+		/* Start transmitting. */
+		uint8_t data = bufPtr->TX[usart_data->buffer.TX_Tail];
+ 73a:	86 85       	ldd	r24, Z+14	; 0x0e
+ 73c:	ef 01       	movw	r28, r30
+ 73e:	c8 0f       	add	r28, r24
+ 740:	d1 1d       	adc	r29, r1
+ 742:	8f 81       	ldd	r24, Y+7	; 0x07
+		usart_data->usart->DATA = data;
+ 744:	8c 93       	st	X, r24
+
+		/* Advance buffer tail. */
+		bufPtr->TX_Tail = (bufPtr->TX_Tail + 1) & USART_TX_BUFFER_MASK;
+ 746:	86 85       	ldd	r24, Z+14	; 0x0e
+ 748:	8f 5f       	subi	r24, 0xFF	; 255
+ 74a:	83 70       	andi	r24, 0x03	; 3
+ 74c:	86 87       	std	Z+14, r24	; 0x0e
+	}
+}
+ 74e:	df 91       	pop	r29
+ 750:	cf 91       	pop	r28
+ 752:	08 95       	ret
+
+00000754 <USART_NineBits_PutChar>:
+ *
+ *  \param usart      The USART module.
+ *  \param data       The data to send.
+ */
+void USART_NineBits_PutChar(USART_t * usart, uint16_t data)
+{
+ 754:	fc 01       	movw	r30, r24
+	if(data & 0x0100) {
+		usart->CTRLB |= USART_TXB8_bm;
+ 756:	84 81       	ldd	r24, Z+4	; 0x04
+ *  \param usart      The USART module.
+ *  \param data       The data to send.
+ */
+void USART_NineBits_PutChar(USART_t * usart, uint16_t data)
+{
+	if(data & 0x0100) {
+ 758:	70 ff       	sbrs	r23, 0
+ 75a:	02 c0       	rjmp	.+4      	; 0x760 <USART_NineBits_PutChar+0xc>
+		usart->CTRLB |= USART_TXB8_bm;
+ 75c:	81 60       	ori	r24, 0x01	; 1
+ 75e:	01 c0       	rjmp	.+2      	; 0x762 <USART_NineBits_PutChar+0xe>
+	}else {
+		usart->CTRLB &= ~USART_TXB8_bm;
+ 760:	8e 7f       	andi	r24, 0xFE	; 254
+ 762:	84 83       	std	Z+4, r24	; 0x04
+	}
+
+	usart->DATA = (data & 0x00FF);
+ 764:	60 83       	st	Z, r22
+ 766:	08 95       	ret
+
+00000768 <USART_NineBits_GetChar>:
+ *  \param usart      The USART module.
+ *
+ *  \retval           Received data.
+ */
+uint16_t USART_NineBits_GetChar(USART_t * usart)
+{
+ 768:	fc 01       	movw	r30, r24
+	if(usart->CTRLB & USART_RXB8_bm) {
+ 76a:	84 81       	ldd	r24, Z+4	; 0x04
+ 76c:	80 ff       	sbrs	r24, 0
+ 76e:	04 c0       	rjmp	.+8      	; 0x778 <USART_NineBits_GetChar+0x10>
+		return(0x0100 | usart->DATA);
+ 770:	80 81       	ld	r24, Z
+ 772:	90 e0       	ldi	r25, 0x00	; 0
+ 774:	91 60       	ori	r25, 0x01	; 1
+ 776:	08 95       	ret
+	}else {
+		return(usart->DATA);
+ 778:	80 81       	ld	r24, Z
+ 77a:	90 e0       	ldi	r25, 0x00	; 0
+	}
+}
+ 77c:	08 95       	ret
+
+0000077e <platform_init>:
+#include "hal.h"
+#include "xmega_hal.h"
+
+void platform_init(void)
+{  
+    OSC.XOSCCTRL = 0x00;
+ 77e:	10 92 52 00 	sts	0x0052, r1	; 0x800052 <__TEXT_REGION_LENGTH__+0x7de052>
+    OSC.PLLCTRL = 0x00;
+ 782:	10 92 55 00 	sts	0x0055, r1	; 0x800055 <__TEXT_REGION_LENGTH__+0x7de055>
+    OSC.CTRL |= OSC_XOSCEN_bm;
+ 786:	80 91 50 00 	lds	r24, 0x0050	; 0x800050 <__TEXT_REGION_LENGTH__+0x7de050>
+ 78a:	88 60       	ori	r24, 0x08	; 8
+ 78c:	80 93 50 00 	sts	0x0050, r24	; 0x800050 <__TEXT_REGION_LENGTH__+0x7de050>
+    
+    //wait for clock
+    while((OSC.STATUS & OSC_XOSCRDY_bm) == 0);
+ 790:	80 91 51 00 	lds	r24, 0x0051	; 0x800051 <__TEXT_REGION_LENGTH__+0x7de051>
+ 794:	83 ff       	sbrs	r24, 3
+ 796:	fc cf       	rjmp	.-8      	; 0x790 <platform_init+0x12>
+    
+    //Switch clock source
+    CCP = CCP_IOREG_gc;
+ 798:	88 ed       	ldi	r24, 0xD8	; 216
+ 79a:	84 bf       	out	0x34, r24	; 52
+    CLK.CTRL = CLK_SCLKSEL_XOSC_gc;    
+ 79c:	83 e0       	ldi	r24, 0x03	; 3
+ 79e:	80 93 40 00 	sts	0x0040, r24	; 0x800040 <__TEXT_REGION_LENGTH__+0x7de040>
+    
+    //Turn off other sources besides external    
+    OSC.CTRL = OSC_XOSCEN_bm;
+ 7a2:	88 e0       	ldi	r24, 0x08	; 8
+ 7a4:	80 93 50 00 	sts	0x0050, r24	; 0x800050 <__TEXT_REGION_LENGTH__+0x7de050>
+ 7a8:	08 95       	ret
+
+000007aa <main>:
+
+int main(void)
+{
+    platform_init();
+ 7aa:	0e 94 bf 03 	call	0x77e	; 0x77e <platform_init>
+    init_uart();
+ 7ae:	0e 94 ee 02 	call	0x5dc	; 0x5dc <init_uart0>
+    trigger_setup();
+ 7b2:	81 e0       	ldi	r24, 0x01	; 1
+ 7b4:	80 93 01 06 	sts	0x0601, r24	; 0x800601 <__TEXT_REGION_LENGTH__+0x7de601>
+
+    simpleserial_init();
+ 7b8:	0e 94 8d 01 	call	0x31a	; 0x31a <simpleserial_init>
+    simpleserial_addcmd(0x01, 0, hello);
+ 7bc:	4d e0       	ldi	r20, 0x0D	; 13
+ 7be:	51 e0       	ldi	r21, 0x01	; 1
+ 7c0:	60 e0       	ldi	r22, 0x00	; 0
+ 7c2:	70 e0       	ldi	r23, 0x00	; 0
+ 7c4:	81 e0       	ldi	r24, 0x01	; 1
+ 7c6:	0e 94 65 01 	call	0x2ca	; 0x2ca <simpleserial_addcmd>
+    while (1)
+        simpleserial_get();
+ 7ca:	0e 94 35 02 	call	0x46a	; 0x46a <simpleserial_get>
+ 7ce:	fd cf       	rjmp	.-6      	; 0x7ca <main+0x20>
+
+000007d0 <_exit>:
+ 7d0:	f8 94       	cli
+
+000007d2 <__stop_program>:
+ 7d2:	ff cf       	rjmp	.-2      	; 0x7d2 <__stop_program>

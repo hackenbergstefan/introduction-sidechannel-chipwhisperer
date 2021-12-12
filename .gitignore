@@ -1,0 +1,5 @@
+.dep
+.ipynb_checkpoints
+.vscode
+objdir*
+__pycache__
