@@ -3,3 +3,9 @@
 .vscode
 objdir*
 __pycache__
+.eep
+.map
+.lss
+.hex
+.elf
+.sym
