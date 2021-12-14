@@ -1,0 +1,11 @@
+.dep
+.ipynb_checkpoints
+.vscode
+objdir*
+__pycache__
+*.eep
+*.map
+*.lss
+*.hex
+*.elf
+*.sym
